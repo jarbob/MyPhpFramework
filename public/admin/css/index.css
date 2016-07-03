@@ -1,0 +1,83 @@
+/* ::::: http://localhost/ecload/admin/styles/general.css ::::: */
+
+body { margin: 0px; padding: 0px; color: rgb(25, 46, 50); font: 12px "sans-serif","Arial","Verdana"; }
+p, td, div { font: 12px "sans-serif","Arial","Verdana"; }
+th { font: bold 12px "sans-serif","Arial","Verdana"; }
+a:visited { color: rgb(51, 91, 100); text-decoration: none; }
+a:link { color: rgb(51, 91, 100); text-decoration: none; }
+a:hover { color: rgb(235, 138, 61); text-decoration: underline; }
+a:active { color: rgb(235, 138, 61); text-decoration: underline; }
+/* ::::: http://localhost/ecload/admin/styles/main.css ::::: */
+
+body { background: rgb(221, 238, 242) none repeat scroll 0% 0%; padding: 10px; }
+h1 { background: rgb(244, 250, 251) none repeat scroll 0% 0%; border: 1px solid rgb(187, 221, 229); color: rgb(156, 172, 175); font-size: 14px; padding: 7px 10px; margin: 0px 0px 10px; overflow: hidden; }
+h1 a:visited { color: rgb(51, 51, 51); }
+h1 a:link { color: rgb(51, 51, 51); }
+h1 a:hover { color: rgb(235, 138, 61); }
+h1 span {  }
+h1 .action-span1 { float: left; margin-top: 2px; }
+#footer { background: rgb(244, 250, 251) none repeat scroll 0% 0%; border: 1px solid rgb(187, 221, 229); padding: 15px; color: rgb(156, 172, 175); margin: 10px 0px; text-align: center; }
+.list-div { width: 100%; background: rgb(238, 248, 249) none repeat scroll 0% 0%; border: 1px solid rgb(187, 221, 229); }
+.list-div table { width: 100%; }
+.list-div th { line-height: 24px; background: rgb(187, 221, 229) url('th_bg.gif') repeat-x scroll 0% 0%; white-space: nowrap; }
+.list-div td { background: rgb(255, 255, 255) none repeat scroll 0% 0%; line-height: 22px; }
+.list-div a:visited, .list-div a:link { text-decoration: underline; color: rgb(25, 46, 50); }
+.list-div a:hover { color: rgb(157, 114, 80); }
+th.group-title { text-align: left; }
+div#popMsg { z-index: 99999; right: 0px; bottom: 0px; width: 180px; border-width: 1px; border-style: solid; border-color: rgb(166, 180, 207) rgb(69, 86, 144) rgb(69, 86, 144) rgb(166, 180, 207); visibility: hidden; display: none; position: fixed; background-color: rgb(201, 211, 243); opacity: 0.65; }
+#popMsgContent { border-width: 1px; border-style: solid; border-color: rgb(114, 142, 184) rgb(185, 201, 239) rgb(185, 201, 239) rgb(114, 142, 184); padding: 5px 10px; color: rgb(31, 51, 107); }
+em, cite, th { font-style: normal; font-weight: normal; }
+.cloud_close { border-bottom: 1px solid rgb(48, 40, 40); background: rgb(255, 255, 255) none repeat scroll 0% 0%; padding: 10px; position: relative; margin-bottom: 5px; font-size: 14px; font-family: "微软雅黑"; }
+.cloud_close a {  }
+.cloud_close img { position: absolute; right: 10px; top: 8px; border: medium none; }
+.Start315 { border: 1px solid rgb(204, 0, 0); background: rgb(255, 255, 204) none repeat scroll 0% 0%; padding: 10px; margin-bottom: 5px; }
+/*left*/
+body { margin: 0px; padding: 0px; color: rgb(25, 46, 50); font: 12px "sans-serif","Arial","Verdana"; }
+p, td, div { font: 12px "sans-serif","Arial","Verdana"; }
+a:visited { color: rgb(51, 91, 100); text-decoration: none; }
+a:link { color: rgb(51, 91, 100); text-decoration: none; }
+a:hover { color: rgb(235, 138, 61); text-decoration: underline; }
+a:active { color: rgb(235, 138, 61); text-decoration: underline; }
+body { background: rgb(128, 189, 203) none repeat scroll 0% 0%; }
+#tabbar-div { background: rgb(39, 130, 150) none repeat scroll 0% 0%; padding-left: 10px; height: 21px; padding-top: 0px; }
+#tabbar-div p { margin: 1px 0px 0px; }
+.tab-front { background: rgb(128, 189, 203) none repeat scroll 0% 0%; line-height: 20px; font-weight: bold; padding: 4px 15px 4px 18px; border-right: 2px solid rgb(51, 91, 100); cursor: pointer; }
+#main-div { border: 1px solid rgb(52, 92, 101); padding: 5px; margin: 5px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+#menu-list { padding: 0px; margin: 0px; }
+#menu-list ul { padding: 0px; margin: 0px; list-style-type: none; color: rgb(51, 91, 100); }
+#menu-list li { padding-left: 16px; line-height: 16px; cursor: pointer; }
+#main-div a:visited, #menu-list a:link, #menu-list a:hover {  }
+#menu-list a:active { color: rgb(235, 138, 61); }
+.explode { background: transparent url('./../images/menu_minus.gif') no-repeat scroll 0px 3px; font-weight: bold; }
+.menu-item { background: transparent url('./../images/menu_arrow.gif') no-repeat scroll 0px 3px; font-weight: normal; }
+#help-title { font-size: 14px; color: rgb(0, 0, 128); margin: 5px 0px; padding: 0px; }
+#help-content { margin: 0px; padding: 0px; }
+
+/*top*/
+body { margin: 0px; padding: 0px; color: rgb(25, 46, 50); font: 12px "sans-serif","Arial","Verdana"; }
+p, td, div { font: 12px "sans-serif","Arial","Verdana"; }
+a:visited { color: rgb(51, 91, 100); text-decoration: none; }
+a:link { color: rgb(51, 91, 100); text-decoration: none; }
+a:hover { color: rgb(235, 138, 61); text-decoration: underline; }
+a:active { color: rgb(235, 138, 61); text-decoration: underline; }
+.clear { clear: both; float: none; font-size: 0px; margin: 0px; padding: 0px; display: block; }
+#header-div { background: rgb(39, 130, 150) none repeat scroll 0% 0%; border-bottom: 1px solid rgb(255, 255, 255); }
+#logo-div { height: 50px; float: left; }
+#license-div { height: 50px; float: left; text-align: center; vertical-align: middle; line-height: 50px; }
+#submenu-div { height: 50px; }
+#submenu-div ul { margin: 0px; padding: 0px; list-style-type: none; }
+#submenu-div li { float: right; padding: 0px 10px; margin: 3px 0px; border-left: 1px solid rgb(255, 255, 255); }
+#submenu-div a:visited, #submenu-div a:link { color: rgb(255, 255, 255); text-decoration: none; }
+#submenu-div a:hover { color: rgb(245, 194, 154); }
+#menu-div { background: rgb(128, 189, 203) none repeat scroll 0% 0%; font-weight: bold; height: 24px; line-height: 24px; }
+#menu-div ul { margin: 0px; padding: 0px; list-style-type: none; }
+#menu-div li { float: left; border-right: 1px solid rgb(25, 46, 50); border-left: 1px solid rgb(187, 221, 229); }
+#menu-div a:visited, #menu-div a:link { display: block; padding: 0px 20px; text-decoration: none; color: rgb(51, 91, 100); background: rgb(156, 203, 214) none repeat scroll 0% 0%; }
+#menu-div a:hover { color: rgb(0, 0, 0); background: rgb(128, 189, 203) none repeat scroll 0% 0%; }
+#submenu-div a.fix-submenu { clear: both; margin-left: 5px; padding: 1px 5px; background: rgb(221, 238, 242) none repeat scroll 0% 0%; color: rgb(39, 130, 150); }
+#submenu-div a.fix-submenu:hover { padding: 1px 5px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; color: rgb(39, 130, 150); }
+#menu-div li.fix-spacel { width: 30px; border-left: medium none; }
+#menu-div li.fix-spacer { border-right: medium none; }
+
+/*drag*/
+body { margin: 0px; padding: 0px; background: rgb(128, 189, 203) none repeat scroll 0% 0%; cursor: e-resize; }

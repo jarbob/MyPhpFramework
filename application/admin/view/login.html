@@ -1,0 +1,113 @@
+<!DOCTYPE html public/admin "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>管理中心</title>
+    <link href="./public/admin/css/base.css" rel="stylesheet" type="text/css"/>
+    <link href="./public/admin/css/admin.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="./public/admin/js/jquery.js"></script>
+    <script type="text/javascript" src="./public/admin/js/base.js"></script>
+    <script type="text/javascript">
+        $().ready(function () {
+            var $loginForm = $("#loginForm");
+            var $username = $("#username");
+            var $password = $("#password");
+            var $code = $("#code");
+
+            // 提交表单验证,记住登录用户名
+            $loginForm.submit(function () {
+                if ($username.val() == "") {
+                    $.dialog({type: "warn", content: "请输入您的用户名!", modal: true, autoCloseTime: 1000});
+                    return false;
+                }
+                if ($password.val() == "") {
+                    $.dialog({type: "warn", content: "请输入您的密码!", modal: true, autoCloseTime: 1000});
+                    return false;
+                }
+                if ($code.val() == "") {
+                    $.dialog({type: "warn", content: "请输入您的验证码!", modal: true, autoCloseTime: 1000});
+                    return false;
+                }
+
+            });
+        });
+    </script>
+</head>
+<body class="login">
+<div class="blank"></div>
+<div class="blank"></div>
+<div class="blank"></div>
+<div class="body">
+    <form id="loginForm" action="index.php?m=admin&c=admin&a=check" method="POST">
+        <table class="loginTable">
+            <tr>
+                <td rowspan="3">
+                    <img src="./public/admin/images/login_logo.gif"/>
+                </td>
+                <th>
+                    账&nbsp;&nbsp;&nbsp;号:
+                </th>
+                <td>
+                    <input type="text" id="username" name="username" class="formText"/>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    密&nbsp;&nbsp;&nbsp;码:
+                </th>
+                <td>
+                    <input type="password" id="password" name="password" class="formText"/>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    验证码:
+                </th>
+                <td>
+                    <input name="code" type="text" class="formText" style="width: 100px" id="code" value=""/>
+                    <a href="#"
+                       onclick="javascript:document.getElementById('valiCode').src='index.php?m=admin&c=admin&a=captcha&t='+Math.random();return false;">
+                        <img src="index.php?m=admin&c=admin&a=captcha" id="valiCode" alt="验证码"
+                             style="cursor:pointer;vertical-align:middle;" border="0"/>
+                    </a>
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;
+
+                </td>
+                <th>&nbsp;
+
+                </th>
+                <td>
+                    <label>
+                        <input type="checkbox" value="1" name="isRememberUsername" id="isRememberUsername"/>&nbsp;记住用户名
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;
+
+                </td>
+                <th>&nbsp;
+
+                </th>
+                <td>
+                    <input type="submit" class="homeButton" value="" hidefocus/><input type="submit"
+                                                                                       class="submitButton" value="登 录"
+                                                                                       hidefocus/>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+<script>
+    document.getElementById("btn").disabled = true;
+</script>
+
+</body>
+<!--GRANT all PRIVILEGES ON project.* to project_user IDENTIFIED by '123456';-->
+</html>
